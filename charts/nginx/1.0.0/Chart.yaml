@@ -1,0 +1,9 @@
+appVersion: 1.0.0
+description: "测试汉字"
+name: nginx
+version: 1.0.0
+kewords:
+- nginx
+- http
+home: https://www.nginx.com/
+icon: http://hub.i-soft.com.cn:5081/nginx.png

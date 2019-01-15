@@ -1,0 +1,10 @@
+appVersion: 1.0.0
+description: wordpress
+name: wordpress
+version: 1.0.0
+kewords:
+- wordpress
+- php
+- http
+home: https://wordpress.org/
+icon: http://hub.i-soft.com.cn:5081/wordpress.png

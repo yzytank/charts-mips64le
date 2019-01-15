@@ -1,0 +1,17 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: {{ template "mongodb.fullname" . }}
+spec:
+  template:
+    metadata:
+      labels:
+        app: {{ template "mongodb.name" . }}
+        release: "{{ .Release.Name }}"
+    spec:
+      containers:
+        - name: mongodb
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy | quote }}
+          ports:
+          - containerPort: 27017

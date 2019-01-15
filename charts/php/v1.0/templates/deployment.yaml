@@ -1,0 +1,17 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: {{ template "php.fullname" . }}
+spec:
+  template:
+    metadata:
+      labels:
+        app: {{ template "php.name" . }}
+        release: "{{ .Release.Name }}"
+    spec:
+      containers:
+        - name: php
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy | quote }}
+          ports:
+          - containerPort: 80

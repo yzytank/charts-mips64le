@@ -1,0 +1,10 @@
+appVersion: 1.0.0
+description: mongodb
+name: mongodb
+version: 1.0.0
+kewords:
+- mongodb
+- php
+- http
+home: https://mongodb.org/
+icon: http://hub.i-soft.com.cn:5081/mongodb.png

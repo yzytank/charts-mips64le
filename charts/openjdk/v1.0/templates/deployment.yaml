@@ -1,0 +1,18 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: {{ template "openjdk.fullname" . }}
+spec:
+  template:
+    metadata:
+      labels:
+        app: {{ template "openjdk.name" . }}
+        release: "{{ .Release.Name }}"
+    spec:
+      containers:
+        - name: openjdk
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy | quote }}
+          ports:
+          - containerPort: 6379
+

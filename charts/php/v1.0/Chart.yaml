@@ -1,0 +1,9 @@
+appVersion: 1.0.0
+description: php
+name: php
+version: 1.0.0
+kewords:
+- php
+- http
+home: https://php.org/
+icon: http://hub.i-soft.com.cn:5081/php.svg

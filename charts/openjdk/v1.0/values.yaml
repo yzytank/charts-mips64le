@@ -1,0 +1,8 @@
+image:
+  repository: hub.i-soft.com.cn:5080/lxapp/openjdk
+  tag: v1.0
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 6379

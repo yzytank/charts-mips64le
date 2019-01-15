@@ -1,0 +1,9 @@
+appVersion: 1.0.0
+description: kingbase port 54321 ; local root /data
+name: kingbase
+version: 1.0.0
+keywords:
+- database
+- kingbase
+home: http://www.kingbase.com.cn/
+icon: http://hub.i-soft.com.cn:5081/kingbase.png

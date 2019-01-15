@@ -1,0 +1,10 @@
+appVersion: 1.0.0
+description: redis
+name: redis
+version: 1.0.0
+kewords:
+- redis
+- php
+- http
+home: https://redis.io/
+icon: http://hub.i-soft.com.cn:5081/redis.png

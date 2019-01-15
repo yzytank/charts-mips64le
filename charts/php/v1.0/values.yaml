@@ -1,0 +1,9 @@
+image:
+  repository: hub.i-soft.com.cn:5080/lxapp/php
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 80
+

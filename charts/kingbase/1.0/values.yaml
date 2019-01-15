@@ -1,0 +1,10 @@
+image:
+  repository: hub.i-soft.com.cn:5080/lxapp/kingbase
+  tag: adm0.0.2
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 54321
+
+

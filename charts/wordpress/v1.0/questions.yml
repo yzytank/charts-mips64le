@@ -1,0 +1,42 @@
+categories:
+- wordpress
+questions:
+- variable: defaultImage
+  default: "true"
+  description: "Use default Docker image"
+  label: Use Default Image
+  type: boolean
+  show_subquestion_if: false
+  group: "Container Images"
+  subquestions:
+  - variable: image.repository
+    default: "hub.i-soft.com.cn:5080/lxapp/wordpress"
+    description: "Docker image name"
+    type: string
+    label: Image Name
+  - variable: image.tag
+    default: "v1.3"
+    description: "Docker image tag"
+    type: string
+    label: Image Tag
+- variable: service.type
+  default: "ClusterIP"
+  description: "K8s Service type"
+  type: enum
+  options:
+    - "ClusterIP"
+    - "NodePort"
+  required: true
+  label: Service Type
+  show_subquestion_if: "NodePort"
+  group: "Services and Load Balancing"
+  subquestions:
+  - variable: service.nodePort
+    default: ""
+    description: "NodePort port number(to set explicitly, choose port between 30000-32767)"
+    type: int
+    min: 30000
+    max: 32767
+    label: Service NodePort number
+
+

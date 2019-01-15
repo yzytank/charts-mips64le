@@ -1,0 +1,8 @@
+image:
+  repository: hub.i-soft.com.cn:5080/lxapp/memcached
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 11211 

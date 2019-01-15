@@ -1,0 +1,8 @@
+appVersion: 1.0.0
+description: openjdk
+name: openjdk
+version: 1.0.0
+kewords:
+- openjdk
+home: https://openjdk.io/
+icon: http://hub.i-soft.com.cn:5081/openjdk.png

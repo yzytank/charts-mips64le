@@ -1,0 +1,9 @@
+appVersion: 1.0.0
+description: tomcat need port 8080
+name: tomcat
+version: 1.0.0
+kewords:
+- tomcat
+- http
+home: http://tomcat.apache.org/
+icon: https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Tomcat-logo.svg/150px-Tomcat-logo.svg.png

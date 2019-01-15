@@ -1,0 +1,9 @@
+appVersion: 1.0.0
+description: "测试汉字"
+name: discuz
+version: 1.0.0
+kewords:
+- discuz
+- http
+home: http://www.discuz.net/forum.php
+icon: http://hub.i-soft.com.cn:5081/discuz.png

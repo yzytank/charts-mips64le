@@ -1,0 +1,17 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: {{ template "python.fullname" . }}
+spec:
+  template:
+    metadata:
+      labels:
+        app: {{ template "python.name" . }}
+        release: "{{ .Release.Name }}"
+    spec:
+      containers:
+        - name: python
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy | quote }}
+          ports:
+          - containerPort: 80

@@ -1,0 +1,10 @@
+image:
+  repository: hub.i-soft.com.cn:5080/public/httpd
+  tag: v1.0.0
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+
+
+

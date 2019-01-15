@@ -1,0 +1,9 @@
+name: httpd
+version: 1.0.1
+appVersion: 2.4.23
+description: The Apache HTTP Server is a powerful, efficient, and extensible web server.
+keywords:
+- httpd
+- apache
+home: http://httpd.apache.org
+icon: https://www.apache.org/img/asf_logo.png
