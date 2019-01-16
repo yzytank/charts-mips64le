@@ -13,7 +13,7 @@ questions:
     type: string
     label: 镜像名：
   - variable: image.tag
-    default: "v2.0.4"
+    default: "v1.2"
     type: string
     label: 镜像tag：
   - variable: mariadbimage.repository

@@ -1,6 +1,6 @@
 image:
   repository: hub.i-soft.com.cn:5080/lxapp/phpmyfaq
-  tag: v2.0.4
+  tag: v1.2
   pullPolicy: IfNotPresent
 
 service:
