@@ -35,7 +35,6 @@ spec:
        - name: {{ template "phpmyfaq.fullname" . }}
          hostPath:
            path: {{ .Values.hostpath.path }} 
-      volumes:
        - name: {{ template "phpmyfaq.fullname" . }}-db
          hostPath:
            path: {{ .Values.hostpath.path }}/mariadb
