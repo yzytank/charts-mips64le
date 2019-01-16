@@ -1,0 +1,10 @@
+appVersion: 2.9.11
+description: phpmyfaq
+name: phpmyfaq
+version: v1.2
+kewords:
+- phpmyfaq
+- php
+- http
+home: https://phpmyfaq.org/
+icon: http://hub.i-soft.com.cn:5081/phpmyfaq.png
