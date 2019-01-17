@@ -1,5 +1,6 @@
 appVersion: 7.1.0
-description: "mysql地址:127.0.0.1:3306 用户名：root 密码：空密码 PHP的报错可忽略，配置完成后需等待5分钟左右"
+description: "mysql地址:127.0.0.1:3306 用户名：root 密码：空密码 
+PHP的报错可忽略，需勾选创建数据库，配置完成后需等待5分钟左右"
 name: vtiger
 version: v1.2.0
 kewords:

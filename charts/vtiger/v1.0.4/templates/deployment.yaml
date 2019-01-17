@@ -21,9 +21,6 @@ spec:
         - name: mariadb
           image: "{{ .Values.mariadbimage.repository }}:{{ .Values.mariadbimage.tag }}"
           imagePullPolicy: {{ .Values.mariadbimage.pullPolicy | quote }}
-          env:
-           - name: MARIADB_DATABASE
-             value: {{ .Values.mariadb.database }}              
           ports:
           - containerPort: 3306
           volumeMounts:

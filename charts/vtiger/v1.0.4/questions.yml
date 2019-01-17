@@ -47,10 +47,3 @@ questions:
   group: "存储"
   type: string
   label: 存在主机上的目录：
-- variable: mariadb.database
-  default: "vtiger"
-  group: "数据库配置"
-  type: string
-  label: 数据库名：
-
-
