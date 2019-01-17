@@ -1,5 +1,5 @@
 image:
-  repository: hub.i-soft.com.cn:5080/lxapp/vtiger
+  repository: hub.i-soft.com.cn:5080/lxapp/vtigercrm
   tag: v1.0.4
   pullPolicy: IfNotPresent
 

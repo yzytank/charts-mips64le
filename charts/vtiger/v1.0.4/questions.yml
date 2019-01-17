@@ -9,7 +9,7 @@ questions:
   group: "镜像"
   subquestions:
   - variable: image.repository
-    default: "hub.i-soft.com.cn:5080/lxapp/vtiger"
+    default: "hub.i-soft.com.cn:5080/lxapp/vtigercrm"
     type: string
     label: 镜像名：
   - variable: image.tag
