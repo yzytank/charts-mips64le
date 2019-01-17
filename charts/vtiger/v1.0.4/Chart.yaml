@@ -1,0 +1,10 @@
+appVersion: 7.1.0
+description: "mysql地址:127.0.0.1:3306 用户名：root 密码：空密码 PHP的报错可忽略，配置完成后需等待5分钟左右"
+name: vtiger
+version: v1.2.0
+kewords:
+- vtiger
+- php
+- http
+home: https://vtiger.org/
+icon: http://hub.i-soft.com.cn:5081/vtiger.png

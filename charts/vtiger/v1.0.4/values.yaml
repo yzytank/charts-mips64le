@@ -1,0 +1,19 @@
+image:
+  repository: hub.i-soft.com.cn:5080/lxapp/vtiger
+  tag: v1.0.4
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 80
+
+hostpath:
+  path: /data/vtiger
+
+mariadbimage:
+  repository: hub.i-soft.com.cn:5080/lxapp/mariadb
+  tag: 10.0.25
+  pullPolicy: IfNotPresent
+
+mariadb:
+  database: vtiger
