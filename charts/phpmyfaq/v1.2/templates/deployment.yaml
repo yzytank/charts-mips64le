@@ -22,7 +22,9 @@ spec:
           image: "{{ .Values.mariadbimage.repository }}:{{ .Values.mariadbimage.tag }}"
           imagePullPolicy: {{ .Values.mariadbimage.pullPolicy | quote }}
           env:
-           - name: MARIADB_ROOT_PASSWORD
+           - name: MARIADB_USER
+             value: {{ .Values.mariadb.user }}
+           - name: MARIADB_PASSWORD
              value: {{ .Values.mariadb.passwd }}
            - name: MARIADB_DATABASE
              value: {{ .Values.mariadb.database }}              

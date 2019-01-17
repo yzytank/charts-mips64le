@@ -47,11 +47,16 @@ questions:
   group: "存储"
   type: string
   label: 存在主机上的目录：
+- variable: mariadb.user
+  default: "phpmyfaq"
+  group: "数据库配置"
+  type: string
+  label: 数据库用户：
 - variable: mariadb.password
   default: "abc123"
   group: "数据库配置"
   type: string
-  label: 数据库root密码：
+  label: 数据库密码：
 - variable: mariadb.database
   default: "phpmyfaq"
   group: "数据库配置"
