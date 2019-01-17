@@ -15,5 +15,3 @@ mariadbimage:
   tag: 10.0.25
   pullPolicy: IfNotPresent
 
-mariadb:
-  database: vtiger
