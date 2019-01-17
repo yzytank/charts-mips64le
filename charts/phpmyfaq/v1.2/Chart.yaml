@@ -1,5 +1,5 @@
 appVersion: 2.9.11
-description: phpmyfaq
+description: "mysql地址:127.0.0.1:3306 用户名：root 密码：空密码"
 name: phpmyfaq
 version: v1.2.0
 kewords:

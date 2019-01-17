@@ -16,6 +16,4 @@ mariadbimage:
   pullPolicy: IfNotPresent
 
 mariadb:
-  user: phpmyfaq
-  password: abc123
   database: phpmyfaq
