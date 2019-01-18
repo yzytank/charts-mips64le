@@ -1,0 +1,7 @@
+image:
+  repository: hub.i-soft.com.cn:5080/lxapp/owncloud
+  tag: v2.0.4
+  pullPolicy: IfNotPresent
+
+hostpath:
+  path: /data/owncloud
