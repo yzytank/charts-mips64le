@@ -5,3 +5,6 @@ image:
 
 hostpath:
   path: /data/owncloud
+
+nodePort:
+  port:
