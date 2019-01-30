@@ -1,0 +1,18 @@
+categories:
+- infors
+questions:
+- variable: defaultImage
+  default: "true"
+  label: 是否使用默认镜像？
+  type: boolean
+  show_subquestion_if: false
+  group: "镜像"
+  subquestions:
+  - variable: image.repository
+    default: "hub.i-soft.com.cn:5080/lxapp/inforsuite10"
+    type: string
+    label: 镜像名：
+  - variable: image.tag
+    default: "v3.0.0"
+    type: string
+    label: 镜像tag： 

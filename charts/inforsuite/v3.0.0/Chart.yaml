@@ -1,0 +1,10 @@
+appVersion: 10.0.10
+description: infors
+name: infors
+version: v3.0.0
+kewords:
+- infors
+- php
+- http
+home: http://www.inforbus.com
+icon: http://hub.i-soft.com.cn:5081/infors.png

@@ -1,0 +1,4 @@
+image:
+  repository: hub.i-soft.com.cn:5080/lxapp/inforsuite10
+  tag: v3.0.0
+  pullPolicy: IfNotPresent
