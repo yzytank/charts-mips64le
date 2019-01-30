@@ -7,11 +7,10 @@ spec:
   ports:
     - port: 8080
       targetPort: 8080
-      nodePort:
-  ports:
+      name: userport
     - port: 8060
       targetPort: 8060
-      nodePort:
+      name: adminport
   selector:
     app: {{ template "infors.name" . }}
     release: "{{ .Release.Name }}"
