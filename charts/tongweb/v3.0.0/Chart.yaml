@@ -1,0 +1,10 @@
+appVersion: 10.0.10
+description: "url:http://NodeIP:Port/console user:twnt password:twnt123.com"
+name: tongweb
+version: v3.0.0
+kewords:
+- tongweb
+- php
+- http
+home: http://www.tongtech.com
+icon: http://hub.i-soft.com.cn:5081/tongweb.png

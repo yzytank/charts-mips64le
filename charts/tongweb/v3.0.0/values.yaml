@@ -1,0 +1,4 @@
+image:
+  repository: hub.i-soft.com.cn:5080/lxapp/tongweb
+  tag: v1.0.1
+  pullPolicy: IfNotPresent

@@ -1,0 +1,17 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: {{ template "tongweb.fullname" . }}
+spec:
+  template:
+    metadata:
+      labels:
+        app: {{ template "tongweb.name" . }}
+        release: "{{ .Release.Name }}"
+    spec:
+      containers:
+        - name: tongweb
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy | quote }}
+          ports:
+          - containerPort: 9060

@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ template "tongweb.fullname" . }}
+spec:
+  type: NodePort
+  ports:
+    - port: 9060
+      targetPort: 9060
+  selector:
+    app: {{ template "tongweb.name" . }}
+    release: "{{ .Release.Name }}"
+
