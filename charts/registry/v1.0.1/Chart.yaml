@@ -1,0 +1,9 @@
+appVersion: 10.0.10
+description: registry
+name: registry
+version: v1.0.1
+kewords:
+- registry
+- tomcat
+home: https://registry.org/
+icon: http://hub.i-soft.com.cn:5081/docker.png

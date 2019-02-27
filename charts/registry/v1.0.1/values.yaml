@@ -1,0 +1,8 @@
+image:
+  repository: hub.i-soft.com.cn:5080/lxapp/registry
+  tag: v1.0.1
+  pullPolicy: IfNotPresent
+
+hostpath:
+  path: /data/registry
+

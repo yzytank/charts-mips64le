@@ -1,0 +1,28 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: {{ template "registry.fullname" . }}
+spec:
+  template:
+    metadata:
+      labels:
+        app: {{ template "registry.name" . }}
+        release: "{{ .Release.Name }}"
+    spec:
+      containers:
+        - name: registry
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy | quote }}
+          ports:
+          - containerPort: 8080
+          - containerPort: 5000
+          volumeMounts:
+          - name: {{ template "registry.fullname" . }}
+            mountPath: /var/lib/registry
+      volumes:
+       - name: {{ template "registry.fullname" . }}
+         hostPath:
+           path: {{ .Values.hostpath.path }} 
+
+     
+
