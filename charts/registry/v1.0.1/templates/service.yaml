@@ -9,7 +9,7 @@ spec:
       targetPort: 8080
       name: tomcat
     - port: 5000
-      targetport: 5000
+      targetPort: 5000
       name: registry
   selector:
     app: {{ template "registry.name" . }}
