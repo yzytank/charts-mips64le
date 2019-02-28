@@ -1,0 +1,8 @@
+image:
+  repository: hub.i-soft.com.cn:5080/lxapp/git
+  tag: v1.0.2
+  pullPolicy: IfNotPresent
+
+hostpath:
+  path: /data/git
+

@@ -1,0 +1,8 @@
+appVersion: 10.0.10
+description: user:git passwd:git  git clone http://git:git@Nodeip:Port/git/chart.git
+name: git
+version: v1.0.1
+kewords:
+- git
+home: https://git.org/
+icon: http://hub.i-soft.com.cn:5081/git.png

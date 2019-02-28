@@ -1,0 +1,24 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: {{ template "git.fullname" . }}
+spec:
+  template:
+    metadata:
+      labels:
+        app: {{ template "git.name" . }}
+        release: "{{ .Release.Name }}"
+    spec:
+      containers:
+        - name: git
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy | quote }}
+          ports:
+          - containerPort: 8082
+          volumeMounts:
+          - name: {{ template "git.fullname" . }}
+            mountPath: /opt/http_git/
+      volumes:
+       - name: {{ template "git.fullname" . }}
+         hostPath:
+           path: {{ .Values.hostpath.path }} 

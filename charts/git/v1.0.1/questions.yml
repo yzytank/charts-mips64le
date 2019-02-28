@@ -1,0 +1,23 @@
+categories:
+- git
+questions:
+- variable: defaultImage
+  default: "true"
+  label: 是否使用默认镜像？
+  type: boolean
+  show_subquestion_if: false
+  group: "镜像"
+  subquestions:
+  - variable: image.repository
+    default: "hub.i-soft.com.cn:5080/lxapp/git"
+    type: string
+    label: 镜像名：
+  - variable: image.tag
+    default: "v1.0.2"
+    type: string
+    label: 镜像tag： 
+- variable: hostpath.path 
+  default: "/data/git"
+  group: "存储"
+  type: string
+  label: 存在主机上的目录：
