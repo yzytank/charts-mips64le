@@ -1,0 +1,21 @@
+categories:
+- rabbitmq
+questions:
+- variable: defaultImage
+  default: "true"
+  description: "Use default Docker image"
+  label: Use Default Image
+  type: boolean
+  show_subquestion_if: false
+  group: "Container Images"
+  subquestions:
+  - variable: image.repository
+    default: "hub.i-soft.com.cn:5080/lxapp/rabbitmq-server"
+    description: "Docker image name"
+    type: string
+    label: rabbit Image Name
+  - variable: image.tag
+    default: "3.1.5"
+    description: "Docker image tag"
+    type: string
+    label: rabbit Image Tag

@@ -1,0 +1,6 @@
+image:
+  repository: hub.i-soft.com.cn:5080/lxapp/rabbitmq-server
+  tag: 3.1.5
+  pullPolicy: IfNotPresent
+
+
