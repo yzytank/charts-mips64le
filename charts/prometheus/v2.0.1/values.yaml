@@ -32,7 +32,7 @@ alertmanager:
   ## alertmanager container image
   ##
   image:
-    repository: hub.i-soft.com.cn:5080/rancher/alertmanager
+    repository: hub.i-soft.com.cn:5080/lxapp/alertmanager
     tag: v0.16.1-cst
     pullPolicy: IfNotPresent
 
@@ -196,7 +196,7 @@ configmapReload:
   ## configmap-reload container image
   ##
   image:
-    repository: hub.i-soft.com.cn:5080/rancher/configmap-reload
+    repository: hub.i-soft.com.cn:5080/lxapp/configmap-reload
     tag: v0.2.2
     pullPolicy: IfNotPresent
 
@@ -252,7 +252,7 @@ kubeStateMetrics:
   ## kube-state-metrics container image
   ##
   image:
-    repository: hub.i-soft.com.cn:5080/rancher/kube-state-metrics
+    repository: hub.i-soft.com.cn:5080/lxapp/kube-state-metrics
     tag: v1.5.0
     pullPolicy: IfNotPresent
 
@@ -323,7 +323,7 @@ nodeExporter:
   ## node-exporter container image
   ##
   image:
-    repository: hub.i-soft.com.cn:5080/rancher/node_exporter
+    repository: hub.i-soft.com.cn:5080/lxapp/node_exporter
     tag: v0.17.0
     pullPolicy: IfNotPresent
 
@@ -410,7 +410,7 @@ server:
   ## Prometheus server container image
   ##
   image:
-    repository: hub.i-soft.com.cn:5080/rancher/prometheus
+    repository: hub.i-soft.com.cn:5080/lxapp/prometheus
     tag: v2.7.2
     pullPolicy: IfNotPresent
 
@@ -983,7 +983,7 @@ grafana:
   adminPassword: "admin"
 
   image:
-    repository: hub.i-soft.com.cn:5080/rancher/grafana
+    repository: hub.i-soft.com.cn:5080/lxapp/grafana
     tag: v6.0.2-t1
 
   #grafanaWatcher:

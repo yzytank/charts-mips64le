@@ -11,7 +11,7 @@ questions:
   group: "Container Images"
   subquestions:
   - variable: server.image.repository
-    default: "hub.i-soft.com.cn:5080/rancher/prometheus"
+    default: "hub.i-soft.com.cn:5080/lxapp/prometheus"
     description: "Prometheus image name"
     type: string
     label: Prometheus Image Name
@@ -21,7 +21,7 @@ questions:
     type: string
     label: Prometheus Image Tag
   - variable: alertmanager.image.repository
-    default: "hub.i-soft.com.cn:5080/rancher/alertmanager"
+    default: "hub.i-soft.com.cn:5080/lxapp/alertmanager"
     description: "Alertmanager image name"
     type: string
     label: Alertmanager Image Name
@@ -33,7 +33,7 @@ questions:
     label: Alertmanager Image Tag
     show_if: "alertmanager.enabled=true"
   - variable: nodeExporter.image.repository
-    default: "hub.i-soft.com.cn:5080/rancher/node_exporter"
+    default: "hub.i-soft.com.cn:5080/lxapp/node_exporter"
     description: "Node exporter image name"
     type: string
     label: NodeExporter Image Name
@@ -43,7 +43,7 @@ questions:
     type: string
     label: NodeExporter Image Tag
   - variable: kubeStateMetrics.image.repository
-    default: "hub.i-soft.com.cn:5080/rancher/kube-state-metrics"
+    default: "hub.i-soft.com.cn:5080/lxapp/kube-state-metrics"
     description: "Kube-state-metrics image name"
     type: string
     label: KubeStateMetrics Image Name
@@ -53,7 +53,7 @@ questions:
     type: string
     label: KubeStateMetrics Image Tag
   - variable: grafana.image.repository
-    default: "hub.i-soft.com.cn:5080/rancher/grafana"
+    default: "hub.i-soft.com.cn:5080/lxapp/grafana"
     description: "Grafana image name"
     type: string
     label: Grafana Image Name
