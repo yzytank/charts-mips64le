@@ -334,7 +334,9 @@ nodeExporter:
 
   ## Additional node-exporter container arguments
   ##
-  extraArgs: {}
+  extraArgs:
+    net: host
+    pid: host
 
   ## Additional node-exporter hostPath mounts
   ##
