@@ -337,6 +337,7 @@ nodeExporter:
   extraArgs:
     net: test
     pid: test
+    path.rootfs: /test
 
   ## Additional node-exporter hostPath mounts
   ##
