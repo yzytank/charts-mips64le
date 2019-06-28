@@ -335,14 +335,14 @@ nodeExporter:
   ## Additional node-exporter container arguments
   ##
   extraArgs:
-    net: host
-    pid: host
+    net: test
+    pid: test
 
   ## Additional node-exporter hostPath mounts
   ##
   extraHostPathMounts:
     - name: host-dir
-      mountPath: /host
+      mountPath: /test
       hostPath: /
       readOnly: true
 
