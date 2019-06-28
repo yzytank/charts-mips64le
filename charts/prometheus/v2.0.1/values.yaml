@@ -338,11 +338,11 @@ nodeExporter:
 
   ## Additional node-exporter hostPath mounts
   ##
-  extraHostPathMounts: []
-    # - name: textfile-dir
-    #   mountPath: /srv/txt_collector
-    #   hostPath: /var/lib/node-exporter
-    #   readOnly: true
+  extraHostPathMounts:
+    - name: host-dir
+      mountPath: /host
+      hostPath: /
+      readOnly: true
 
   extraConfigmapMounts: []
     # - name: certs-configmap
