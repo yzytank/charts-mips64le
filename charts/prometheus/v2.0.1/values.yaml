@@ -335,8 +335,10 @@ nodeExporter:
   ## Additional node-exporter container arguments
   ##
   extraArgs:
-    net: host
-    pid: host
+    path.rootfs: /host
+    path.procfs: /host/proc
+    path.sysfs: /host/sys
+    
 
   ## Additional node-exporter hostPath mounts
   ##
@@ -344,6 +346,14 @@ nodeExporter:
     - name: host
       mountPath: /host
       hostPath: /
+      readOnly: true
+    - name: proc
+      mountPath: /host/proc
+      hostPath: /proc
+      readOnly: true
+    - name: sys
+      mountPath: /host/sys
+      hostPath: /sys
       readOnly: true
 
   extraConfigmapMounts: []
