@@ -5,10 +5,10 @@ rbac:
 ##
 serviceAccounts:
   alertmanager:
-    create: false
+    create: true
     name:
   kubeStateMetrics:
-    create: false
+    create: true
     name:
   nodeExporter:
     create: true
@@ -17,13 +17,13 @@ serviceAccounts:
     create: false
     name:
   server:
-    create: false
+    create: true
     name:
 
 alertmanager:
   ## If false, alertmanager will not be installed
   ##
-  enabled: false
+  enabled: true
 
   ## alertmanager container name
   ##
@@ -977,7 +977,7 @@ networkPolicy:
 ## Define Grafana Configurations
 ##
 grafana:
-  enabled: false
+  enabled: true
 
   replicas: 1
 
