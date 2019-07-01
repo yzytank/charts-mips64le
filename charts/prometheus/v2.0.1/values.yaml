@@ -5,10 +5,10 @@ rbac:
 ##
 serviceAccounts:
   alertmanager:
-    create: true
+    create: false
     name:
   kubeStateMetrics:
-    create: true
+    create: false
     name:
   nodeExporter:
     create: true
@@ -17,7 +17,7 @@ serviceAccounts:
     create: false
     name:
   server:
-    create: true
+    create: false
     name:
 
 alertmanager:
