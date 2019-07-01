@@ -334,11 +334,11 @@ nodeExporter:
 
   ## Additional node-exporter container arguments
   ##
-  extraArgs:{}
+  extraArgs: {}
 
   ## Additional node-exporter hostPath mounts
   ##
-  extraHostPathMounts:[]
+  extraHostPathMounts: []
 
   extraConfigmapMounts: []
     # - name: certs-configmap
