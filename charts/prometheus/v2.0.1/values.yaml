@@ -334,22 +334,11 @@ nodeExporter:
 
   ## Additional node-exporter container arguments
   ##
-  extraArgs:
-    path.procfs: /host/proc
-    path.sysfs: /host/sys
-    
+  extraArgs:{}
 
   ## Additional node-exporter hostPath mounts
   ##
-  extraHostPathMounts:
-    - name: sys
-      mountPath: /host/sys
-      hostPath: /sys
-      readOnly: true
-    - name: proc
-      mountPath: /host/proc
-      hostPath: /proc
-      readOnly: true
+  extraHostPathMounts:[]
 
   extraConfigmapMounts: []
     # - name: certs-configmap
