@@ -31,6 +31,7 @@ spec:
           image: "{{ .Values.nodeExporter.image.repository }}:{{ .Values.nodeExporter.image.tag }}"
           imagePullPolicy: "{{ .Values.nodeExporter.image.pullPolicy }}"
           args:
+            - --path.rootfs=/host
             - --path.procfs=/host/proc
             - --path.sysfs=/host/sys
           {{- range $key, $value := .Values.nodeExporter.extraArgs }}
@@ -47,6 +48,9 @@ spec:
           resources:
 {{ toYaml .Values.nodeExporter.resources | indent 12 }}
           volumeMounts:
+            - name: host
+              mountPath: /host
+              readOnly: true
             - name: proc
               mountPath: /host/proc
               readOnly:  true
@@ -78,6 +82,9 @@ spec:
 {{ toYaml .Values.nodeExporter.securityContext | indent 8 }}
     {{- end }}
       volumes:
+        - name: host
+          hostPath:
+            path: /
         - name: proc
           hostPath:
             path: /proc
