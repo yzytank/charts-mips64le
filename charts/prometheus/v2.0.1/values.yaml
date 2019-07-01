@@ -23,7 +23,7 @@ serviceAccounts:
 alertmanager:
   ## If false, alertmanager will not be installed
   ##
-  enabled: true
+  enabled: false
 
   ## alertmanager container name
   ##
@@ -977,7 +977,7 @@ networkPolicy:
 ## Define Grafana Configurations
 ##
 grafana:
-  enabled: true
+  enabled: false
 
   replicas: 1
 
